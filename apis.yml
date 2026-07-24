@@ -1,8 +1,25 @@
 aid: brosmed
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/brosmed.png
 name: Brosmed
-description: 'Brosmed is a company surfaced as a portfolio company of idg-capital and added to the API
-  Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'BrosMed Medical (Guangdong Brosmed Medical Technology Co., Ltd.) is a medical device
+  manufacturer founded in 2012 and headquartered in Dongguan, Guangdong, China, specializing in the
+  research, manufacturing, and global sale of high-performance vascular intervention medical devices.
+  Its product families span cardiovascular intervention, peripheral vascular intervention, hemodialysis
+  access, neurointervention, and intervention accessories. The company employs over 1,000 staff, holds
+  650+ product registrations, and sells across 100+ countries. It was surfaced as a portfolio company of
+  IDG Capital and added to the API Evangelist network; as a physical medical-device manufacturer it
+  publishes no public developer/API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/brosmed/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +29,28 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Healthcare
+- Medical Devices
+- Medical Technology
+- Cardiovascular
+- Vascular Intervention
+- China
 apis: []
+common:
+- type: DomainSecurity
+  url: security/brosmed-domain-security.yml
+- type: Website
+  url: https://www.brosmed.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
